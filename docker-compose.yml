@@ -1,0 +1,12 @@
+version:                 "3.4"
+
+services:
+  #databases
+  puppy:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: puppy
+    
+    volumes:
+        - .:/puppy
